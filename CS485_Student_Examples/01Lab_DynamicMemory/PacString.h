@@ -28,7 +28,7 @@ public:
   friend std::ostream& operator<<(std::ostream &out, const PacString &rcData);
 
   // Bonus
-  PacString& operator+=(const PacString &rcData);
+  //PacString& operator+=(const PacString &rcData);
   PacString operator+(const PacString &rcData) const;
 
 private:

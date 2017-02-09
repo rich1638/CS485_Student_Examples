@@ -7,7 +7,7 @@
 // Purpose:    Practice using raw pointers
 //***************************************************************************
 
-#define MEM_DEBUG
+// #define MEM_DEBUG
 // #include "mem_debug.h"
 
 #include <iostream>
@@ -30,14 +30,14 @@ int main ()
 
   std::cout << "s3: " << s3 << std::endl;
 
-  s3 += (s3 + "!!");
+  //s3 += (s3 + "!!");
 
-  std::cout << "s3: " << s3 << std::endl;
+  //std::cout << "s3: " << s3 << std::endl;
 
 
 
   // TODO:
-  PacString *pcDynString;
+  //PacString *pcDynString;
 
   // dynamically allocate the PacString object using
   // pcDynString.

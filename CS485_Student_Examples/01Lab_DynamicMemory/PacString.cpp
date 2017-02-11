@@ -1,13 +1,16 @@
 #include "PacString.h"
 #include <utility>
 #include <stdio.h>
+#include <iostream>
 
 PacString::PacString()
 {
+	std::cout << "CREATE()\n";
 }
 
 PacString::PacString(const char *pszString)
 {
+	std::cout << "CREATE(STRING)\n";
 	int size = (int) strlen(pszString) + 1;
 
 	mpszData = new char[size];
@@ -20,16 +23,19 @@ PacString::PacString(const char *pszString)
 
 PacString::PacString(const PacString &rcData)
 {
+	std::cout << "CREATE(PAC)\n";
 	PacString(rcData.mpszData);
 }
 
 PacString::~PacString()
 {
+	std::cout << "DESTROY\n";
 	delete mpszData;
 }
 
 PacString& PacString::operator=(PacString rcData)
 {
+	std::cout << "operator= \n";
 	using std::swap;
 
 	swap(mpszData, rcData.mpszData);
@@ -39,20 +45,26 @@ PacString& PacString::operator=(PacString rcData)
 
 std::ostream& operator<<(std::ostream &out, const PacString &rcData)
 {
+	std::cout << "operator<< \n";
 	out << rcData.mpszData;
 
 	return out;
 }
-/*
+
 PacString& PacString::operator+=(const PacString &rcData)
 {
+	std::cout << "operator+= \n";
+	*this = *this + rcData;
+	return *this;
 }
-*/
+
 PacString PacString::operator+(const PacString &rcData) const
 {
+	std::cout << "operator+ \n";
 	int totalSize = strlen(mpszData) + strlen(rcData.mpszData) + 1;
 	int leftSize = strlen(mpszData);
 
+	//const char * szConcatConst;
 	char * szConcat = new char[totalSize];
 
 	for (int i = 0; i < leftSize; i++)
@@ -65,5 +77,8 @@ PacString PacString::operator+(const PacString &rcData) const
 		szConcat[leftSize + i] = rcData.mpszData[i];
 	}
 
-	return PacString(szConcat);
+	//szConcatConst = szConcat;
+	//delete szConcat;
+
+	return PacString(szConcat); //szConcatConst
 }

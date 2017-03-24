@@ -152,6 +152,7 @@
     <ClInclude Include="Manager.h" />
     <ClInclude Include="PrintVisitor.h" />
     <ClInclude Include="SalarySumVisitor.h" />
+    <ClInclude Include="SalaryVisitor.h" />
     <ClInclude Include="SimpleContainer.h" />
     <ClInclude Include="Worker.h" />
   </ItemGroup>
@@ -162,6 +163,7 @@
     <ClCompile Include="Manager.cpp" />
     <ClCompile Include="PrintVisitor.cpp" />
     <ClCompile Include="SalarySumVisitor.cpp" />
+    <ClCompile Include="SalaryVisitor.cpp" />
     <ClCompile Include="SimpleContainer.cpp" />
     <ClCompile Include="Worker.cpp" />
   </ItemGroup>

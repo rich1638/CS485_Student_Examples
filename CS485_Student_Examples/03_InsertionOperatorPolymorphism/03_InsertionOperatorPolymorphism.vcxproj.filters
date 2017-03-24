@@ -15,19 +15,22 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="PacString.h">
+    <ClInclude Include="Child.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="mem_debug.h">
+    <ClInclude Include="Parent.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="Child.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PacString.cpp">
-      <Filter>Resource Files</Filter>
+    <ClCompile Include="driver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Parent.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

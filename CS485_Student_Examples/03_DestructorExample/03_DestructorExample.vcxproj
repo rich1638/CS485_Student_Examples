@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{B8C73E7F-3FE0-4D16-855A-B05B8B36B882}</ProjectGuid>
+    <ProjectGuid>{8473CE48-596E-423B-B8A2-001B51E09B3F}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>My01Lab_DynamicMemory</RootNamespace>
+    <RootNamespace>My03_DestructorExample</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -146,12 +146,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="mem_debug.h" />
-    <ClInclude Include="PacString.h" />
+    <ClInclude Include="ChildNoVirtualDtor.h" />
+    <ClInclude Include="ChildWithVirtualDtor.h" />
+    <ClInclude Include="ParentNoVirtualDtor.h" />
+    <ClInclude Include="ParentWithVirtualDtor.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="PacString.cpp" />
+    <ClCompile Include="driver.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

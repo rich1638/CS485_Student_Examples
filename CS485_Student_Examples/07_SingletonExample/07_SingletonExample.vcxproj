@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{B8C73E7F-3FE0-4D16-855A-B05B8B36B882}</ProjectGuid>
+    <ProjectGuid>{3CA41A03-4CD2-4310-AB9A-DA2725812988}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>My01Lab_DynamicMemory</RootNamespace>
+    <RootNamespace>My07_SingletonExample</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -146,12 +146,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="mem_debug.h" />
-    <ClInclude Include="PacString.h" />
+    <ClInclude Include="Singleton.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="PacString.cpp" />
+    <ClCompile Include="driver.cpp" />
+    <ClCompile Include="Singleton.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
